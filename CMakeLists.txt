@@ -57,6 +57,8 @@ MESSAGE(${OpenCV_VERSION})
 find_package(Eigen3 3.1.0 REQUIRED)
 set(Pangolin_DIR /home/zdf/cppLibraries/Pangolin/build)
 find_package(Pangolin REQUIRED)
+MESSAGE("Pangolin VERSION:")
+MESSAGE(${Pangolin_VERSION})
 
 include_directories(
 ${PROJECT_SOURCE_DIR}
