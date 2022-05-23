@@ -68,21 +68,21 @@ void Optimizer::BundleAdjustment(const vector<KeyFrame *> &vpKFs, const vector<M
     g2o::SparseOptimizer optimizer;
     g2o::BlockSolver_6_3::LinearSolverType * linearSolver;
 
-    cout << "BA bug check-1" << endl;
+    // cout << "BA bug check-1" << endl;
     linearSolver = new g2o::LinearSolverEigen<g2o::BlockSolver_6_3::PoseMatrixType>();
-    cout << "BA bug check-2" << endl;
+    // cout << "BA bug check-2" << endl;
 
     g2o::BlockSolver_6_3 * solver_ptr = new g2o::BlockSolver_6_3(linearSolver);
-    cout << "BA bug check-3" << endl;
+    // cout << "BA bug check-3" << endl;
 
     g2o::OptimizationAlgorithmLevenberg* solver = new g2o::OptimizationAlgorithmLevenberg(solver_ptr);
     optimizer.setAlgorithm(solver);
     optimizer.setVerbose(false);
-    cout << "BA bug check-4" << endl;
+    // cout << "BA bug check-4" << endl;
 
     if(pbStopFlag)
         optimizer.setForceStopFlag(pbStopFlag);
-    cout << "BA bug check-5" << endl;
+    // cout << "BA bug check-5" << endl;
 
     long unsigned int maxKFid = 0;
 
