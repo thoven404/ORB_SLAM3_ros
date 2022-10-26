@@ -1,5 +1,6 @@
-[ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) ros package built using catkin_make. 
-Tested with Ubuntu-20.04, C++14, ROS-Noetic, OpenCV-4.5.4 and Pangolin-0.7 ...
+[ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) ros package built using catkin_make. \
+Tested with Ubuntu-20.04, C++14, ROS-Noetic, OpenCV-4.5.4 and Pangolin-0.7 .
+
 ## 1. Building package:
 ### Creat a ros workspace
 ```
